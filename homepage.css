@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Reset default margin and padding */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #242b35;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.logo img {
+  height: 60px; /* Increase the logo height */
+}
+
+.menu-toggle {
+  background: none;
+  padding-right: 10px;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Hide the menu toggle button on larger screens */
+}
+
+/* Drawer menu styles */
+.drawer-menu {
+  display: none; /* Hide the drawer menu on larger screens */
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #242b35;
+  color: #fff;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  padding-top: 60px; /* Adjust based on header height */
+}
+
+.drawer-menu ul {
+  list-style-type: none;
+}
+
+.drawer-menu ul li {
+  border-bottom: 1px solid #444;
+}
+
+.drawer-menu ul li a {
+  padding: 1rem;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.drawer-menu ul li a:hover {
+  background-color: #191e25;
+  border-radius: 5px;
+}
+.active {
+  background-color: #191e25;
+  border-radius: 5px;
+}
+
+/* Close button for the drawer menu */
+.close-drawer {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Open the drawer menu */
+.drawer-menu.open {
+  left: 0;
+  z-index: 1;
+}
+
+/* Main content styles */
+main {
+  padding: 0px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust main content when drawer is open */
+main.drawer-open {
+  margin-left: 250px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the menu toggle button on smaller screens */
+  }
+
+  .drawer-menu {
+    display: block; /* Show the drawer menu on smaller screens */
+    width: 100%;
+    left: -100%;
+  }
+
+  .drawer-menu.open {
+    left: 0;
+  }
+
+  main.drawer-open {
+    margin-left: 0;
+  }
+}
+
+/* Menu bar styles for larger screens */
+@media (min-width: 769px) {
+  .drawer-menu {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: inherit;
+    overflow: visible;
+    padding-top: 0;
+    margin-left: auto; /* Align the menu to the right */
+  }
+
+  .drawer-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer-menu ul li {
+    padding: 0;
+    border: none;
+  }
+
+  .drawer-menu ul li a {
+    padding: 1rem;
+    color: #fff;
+    position: relative;
+  }
+
+  .drawer-menu ul li a:hover {
+    background-color: #191e25;
+  }
+
+  .close-drawer {
+    display: none; /* Hide the close button on larger screens */
+  }
+}
+
+/* Hero section CSS Code */
+.hero {
+  background: url("logo.png") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.call-action-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: 2px solid #ffffff;
+
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.call-action-btn:hover {
+  background-color: #242b35;
+}
+
+/* Service Section CSS Code */
+.services {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.services li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services li:hover {
+  background: #ececec;
+}
+
+.services li a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Contact US Section CSS Code */
+.contact-us-sec {
+  padding: 10px 0px;
+  background-color: #242b35;
+}
+.contect-title {
+  font-size: 2rem;
+  color: white;
+}
+.container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #242b35;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-form {
+  padding: 30px;
+  flex: 2;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 20px 70px;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.send {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #242b35;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #191e25;
+}
+
+@media (max-width: 768px) {
+  .contact-info,
+  .contact-form {
+    margin: 10px;
+  }
+}
+
+/* Footer Section CSS Code */
+footer {
+  width: 100%;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+.footer-about p,
+.footer-links ul,
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+}
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social ul li a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.footer-social ul li a:hover {
+  color: silver;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #242b35;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    margin: 10px 0;
+  }
+}
+.wallet-point {
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  color: black;
+  padding: 3px;
+  border-radius: 50px;
+}
+.wallet-item {
+  margin-right: 12px;
+}

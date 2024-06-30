@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #242b35;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.message {
+  font-family: sans-serif;
+  background-color: rgb(247, 89, 89);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+form {
+  text-align: center;
+  /* Align form content to center */
+}
+p {
+  color: white;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: white !important;
+}
+
+label {
+  display: block !important;
+  margin-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  /* Make input fields take full width */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.button {
+  color: white;
+  border: 2px solid white;
+  padding: 12px 20px;
+  background-color: #242b35;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.new-user {
+  text-align: center;
+}
+.wallet-point{
+  background-color: white;
+  color: black;
+  padding: 3px;
+  border-radius: 50px;
+}

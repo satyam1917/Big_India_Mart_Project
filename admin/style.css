@@ -1,0 +1,392 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.title-line {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.table-container {
+  width: 70%;
+  margin-left: 50px;
+  overflow-x: auto;
+}
+.popup,
+.popup-1 {
+  background-color: #eff2fc;
+}
+.card {
+  flex-basis: 14.5%; /* Adjust the percentage value to your preference */
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  color: #555;
+}
+.cashback {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cashback:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f4f4f4;
+}
+.status-active {
+  color: green;
+}
+.status-inactive {
+  color: gray;
+}
+.status-pending {
+  color: orange;
+}
+.btn-view,
+.btn-delete {
+  display: none; /* Hide the View Details and Delete buttons */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Background color for the body */
+}
+.table-container {
+  width: 70%;
+  margin: 0px auto; /* Center the table horizontally */
+  overflow-x: auto;
+  background-color: white; /* Background color for the table */
+  border-radius: 10px; /* Add border radius to the table */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f4f4f4;
+}
+.status-active {
+  color: green;
+  cursor: pointer;
+}
+.status-inactive {
+  color: gray;
+}
+.status-pending {
+  color: orange;
+}
+.btn-view,
+.btn-delete {
+  display: none; /* Hide the View Details and Delete buttons */
+}
+
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #eff2fc;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 20px;
+}
+.popup-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.popup-body {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popup-body .info-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.popup-body .info-group p {
+  margin: 0 10px;
+  flex: 1;
+}
+.popup-footer {
+  text-align: center;
+}
+.popup-footer button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.popup-1 {
+  display: none;
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #eff2fc;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 20px;
+}
+.popup-header-1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.popup-body-1 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popup-body-1 .info-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.popup-body-1 .info-group p {
+  margin: 0 10px;
+  flex: 1;
+}
+.popup-footer-1 {
+  text-align: center;
+}
+.popup-footer-1 button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.btn-cancel {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+.btn-submit {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+.other-info {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+.other-info .info-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.other-info .info-group p {
+  margin: 0 10px;
+  flex: 1;
+}
+.placeholder {
+  font-style: italic;
+  color: #aaa;
+}
+h2 {
+  margin: 5px;
+}
+.status-active {
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  padding: 8px 16px; /* Adjust padding for better appearance */
+  display: inline-block; /* Ensure proper width and height */
+  text-align: center; /* Center text horizontally */
+  line-height: 1; /* Center text vertically */
+  margin-top: 5px;
+}
+
+.status-processing {
+  background-color: orange;
+  color: white;
+  color: white;
+  border-radius: 15px;
+  padding: 8px 16px; /* Adjust padding for better appearance */
+  display: inline-block; /* Ensure proper width and height */
+  text-align: center; /* Center text horizontally */
+  line-height: 1; /* Center text vertically */
+  margin-top: 5px;
+}
+
+.status-completed {
+  background-color: blue;
+  color: white;
+  color: white;
+  border-radius: 15px;
+  padding: 8px 16px; /* Adjust padding for better appearance */
+  display: inline-block; /* Ensure proper width and height */
+  text-align: center; /* Center text horizontally */
+  line-height: 1; /* Center text vertically */
+  margin-top: 5px;
+}
+
+.popup {
+  /* Adjust width */
+  width: 40%;
+  /* Add padding to create space for close icon */
+  padding-right: 40px; /* Adjust as needed */
+  /* Other styles remain unchanged */
+}
+.popup-body {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popup-1 {
+  /* Adjust width */
+  width: 30%;
+  /* Add padding to create space for close icon */
+  padding-right: 40px; /* Adjust as needed */
+  /* Other styles remain unchanged */
+}
+.popup-body-1 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info-group p {
+  margin: 0 10px;
+}
+
+.popup-footer {
+  text-align: center;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  margin: 0 5px; /* Add margin to separate the buttons */
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  color: white;
+}
+
+.btn-submit.accept {
+  background-color: green;
+}
+
+.btn-submit.complete {
+  background-color: blue;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  /* Style your close icon */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between cards */
+}
+.card {
+  flex-basis: 20%; /* Each card takes up 30% of the container width */
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding doesn't increase the card size */
+  flex-direction: row;
+}
+
+.cashback {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: blue;
+  width: 60px;
+  color: white;
+}
+.message {
+  font-family: sans-serif;
+  background-color: rgb(247, 89, 89);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+.wallet-point {
+  background-color: white;
+  color: black;
+  padding: 3px;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  position: absolute;
+  top: 0px;
+}
+.regis-btn{
+  margin-top: 10px;
+  background-color: #343a40;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.regis-btn:hover{
+  color: white;
+}
